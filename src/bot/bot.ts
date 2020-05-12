@@ -43,7 +43,7 @@ export class Bot implements IBot {
                 let phrases = pingPhrases.slice();
                 if(msg.guild)
                     phrases = phrases.concat(msg.guild.emojis.array().map(x => x.name));
-                msg.channel.send(random(phrases));
+                msg.channel.send("Hello Motherfucker");
             })
             .on('help', (cmd: ParsedMessage, msg: Message) => {
                 msg.channel.send(this.helptext);
